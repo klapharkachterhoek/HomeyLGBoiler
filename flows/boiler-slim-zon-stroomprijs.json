@@ -1,0 +1,657 @@
+{
+  "homeyLGBoilerVersion": "2.0.0",
+  "beschrijving": "Export van de Advanced Flow 'Boiler slim (zon + stroomprijs)'. ID's van apparaten, variabelen, script en gebruiker zijn vervangen door {{PLACEHOLDERS}}.",
+  "advancedFlow": {
+    "name": "Boiler slim (zon + stroomprijs)",
+    "enabled": true,
+    "cards": {
+      "9dde2b45-4243-4255-b636-882c59e3e373": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "21:00"
+        },
+        "x": 0,
+        "y": 0,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "630af193-53e4-4635-88b9-d7b50a0f2a63": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "22:00"
+        },
+        "x": 0,
+        "y": 90,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "4d474b48-eb66-4e4d-92b4-2d9e9b95acf8": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "23:00"
+        },
+        "x": 0,
+        "y": 180,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "f718e82d-7444-447e-a6cb-afedbd3b47b5": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "00:00"
+        },
+        "x": 0,
+        "y": 270,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "bb705cf0-39d1-4d4c-a3b9-94755c6676d9": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "01:00"
+        },
+        "x": 0,
+        "y": 360,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "1f23d29f-fc7e-4288-a231-76b4cb136290": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "02:00"
+        },
+        "x": 0,
+        "y": 450,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "5a79abcd-5aaa-481c-a500-5d177dfd457f": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "03:00"
+        },
+        "x": 0,
+        "y": 540,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "99f36e88-26be-4e46-a8fb-6a9e83554958": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "04:00"
+        },
+        "x": 0,
+        "y": 630,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "815908f1-c859-4386-bfef-27b99681a346": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "05:00"
+        },
+        "x": 0,
+        "y": 720,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "5e28c9ab-dca9-486c-9a4a-60c9770d8d30": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "06:00"
+        },
+        "x": 0,
+        "y": 810,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "bc3cdf08-01d0-405a-bf55-14b5621bc665": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "07:00"
+        },
+        "x": 0,
+        "y": 900,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "e72a217e-fa11-4544-8fab-fd2fe7929cc0": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "08:00"
+        },
+        "x": 0,
+        "y": 990,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "e0a59915-2015-4891-852a-2a945d355a56": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "09:00"
+        },
+        "x": 0,
+        "y": 1080,
+        "outputSuccess": [
+          "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb"
+        ]
+      },
+      "f00f80b3-6d82-49f8-9e7b-c489ccb9e8fb": {
+        "type": "condition",
+        "id": "homey:manager:logic:equal_boolean",
+        "droptoken": "homey:manager:logic|{{VAR_BOILER_ZON_MORGEN}}",
+        "x": 450,
+        "y": 500,
+        "outputTrue": [
+          "fe5b4a27-e8d6-4c61-975c-d852cd66d541"
+        ],
+        "outputFalse": [
+          "37c33ba9-27a3-4709-b8ae-fc4661d2ce24"
+        ]
+      },
+      "37c33ba9-27a3-4709-b8ae-fc4661d2ce24": {
+        "type": "condition",
+        "id": "homey:manager:energy:dynamic_electricity_price_is_one_of_lowest_x_hours_between",
+        "args": {
+          "numHours": 7,
+          "startTime": "21:00",
+          "endTime": "09:00"
+        },
+        "x": 900,
+        "y": 400,
+        "outputTrue": [
+          "6544d578-4c8e-47ed-9d5d-8f20152cf83f"
+        ],
+        "outputFalse": [
+          "fe5b4a27-e8d6-4c61-975c-d852cd66d541"
+        ],
+        "outputError": [
+          "934ce898-9dcf-49f5-a6fe-b15a3c8110ac",
+          "6544d578-4c8e-47ed-9d5d-8f20152cf83f"
+        ]
+      },
+      "ba0440f6-d935-4949-8b76-34e6323bcafe": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "10:00"
+        },
+        "x": 0,
+        "y": 1350,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "e40030b8-6391-40ac-b7ff-7c3b155af89b": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "11:00"
+        },
+        "x": 0,
+        "y": 1440,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "4ea2a12a-7bf6-4833-a45f-ee8003a6c672": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "12:00"
+        },
+        "x": 0,
+        "y": 1530,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "03554069-493c-48da-abff-89619338ab14": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "13:00"
+        },
+        "x": 0,
+        "y": 1620,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "c902fcdb-ea64-4b80-bdc5-b54b6000f373": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "14:00"
+        },
+        "x": 0,
+        "y": 1710,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "cc608db7-978d-45f8-a326-579fd222ddf1": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "15:00"
+        },
+        "x": 0,
+        "y": 1800,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "258bed17-8e24-4e70-85e9-676424e13f6b": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "16:00"
+        },
+        "x": 0,
+        "y": 1890,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "8f1385a3-5276-4aa5-8b17-b4f83bd3124e": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "17:00"
+        },
+        "x": 0,
+        "y": 1980,
+        "outputSuccess": [
+          "2364365c-adf4-4fa3-970e-d9971d389dcf"
+        ]
+      },
+      "2364365c-adf4-4fa3-970e-d9971d389dcf": {
+        "type": "condition",
+        "id": "homey:manager:logic:equal_boolean",
+        "droptoken": "homey:manager:logic|{{VAR_BOILER_ZON_MORGEN}}",
+        "x": 450,
+        "y": 1600,
+        "outputTrue": [
+          "98eaaf89-772b-4768-9418-fdbf26310784"
+        ],
+        "outputFalse": [
+          "fe5b4a27-e8d6-4c61-975c-d852cd66d541"
+        ]
+      },
+      "98eaaf89-772b-4768-9418-fdbf26310784": {
+        "type": "condition",
+        "id": "homey:manager:energy:solar_forecast_is_one_of_highest_x_hours_between",
+        "args": {
+          "numHours": 5,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        },
+        "x": 900,
+        "y": 1600,
+        "outputTrue": [
+          "6544d578-4c8e-47ed-9d5d-8f20152cf83f"
+        ],
+        "outputFalse": [
+          "fe5b4a27-e8d6-4c61-975c-d852cd66d541"
+        ],
+        "outputError": [
+          "6544d578-4c8e-47ed-9d5d-8f20152cf83f"
+        ]
+      },
+      "6544d578-4c8e-47ed-9d5d-8f20152cf83f": {
+        "type": "condition",
+        "id": "homey:manager:logic:equal_boolean",
+        "droptoken": "homey:manager:logic|{{VAR_BOILER_NACHT_VERWARMEN}}",
+        "inverted": true,
+        "x": 1400,
+        "y": 600,
+        "outputTrue": [
+          "9ad9bbf7-2671-4506-9f50-52912e52245b"
+        ]
+      },
+      "9ad9bbf7-2671-4506-9f50-52912e52245b": {
+        "type": "action",
+        "id": "homey:app:com.athom.homeyscript:runWithArg",
+        "args": {
+          "script": {
+            "id": "{{HOMEYSCRIPT_ID}}",
+            "name": "Temperatuur variabel instellen"
+          },
+          "argument": "55, HEAT_PUMP"
+        },
+        "x": 1850,
+        "y": 600,
+        "outputSuccess": [
+          "f31e0487-e193-4c74-bda1-3a1fcc19ede9"
+        ]
+      },
+      "f31e0487-e193-4c74-bda1-3a1fcc19ede9": {
+        "type": "action",
+        "id": "homey:manager:logic:variable_set_boolean",
+        "args": {
+          "variable": {
+            "id": "{{VAR_BOILER_NACHT_VERWARMEN}}",
+            "name": "BoilerNachtVerwarmen"
+          },
+          "value": true
+        },
+        "x": 2300,
+        "y": 600,
+        "outputSuccess": [
+          "19b6e0b9-f701-4331-8cb7-516fd81a29cd"
+        ]
+      },
+      "fe5b4a27-e8d6-4c61-975c-d852cd66d541": {
+        "type": "condition",
+        "id": "homey:manager:logic:equal_boolean",
+        "droptoken": "homey:manager:logic|{{VAR_BOILER_NACHT_VERWARMEN}}",
+        "x": 1400,
+        "y": 1000,
+        "outputTrue": [
+          "9d4cc37f-dd8f-4785-9ea9-4a8dcfbbe158"
+        ]
+      },
+      "9d4cc37f-dd8f-4785-9ea9-4a8dcfbbe158": {
+        "type": "action",
+        "id": "homey:app:com.athom.homeyscript:runWithArg",
+        "args": {
+          "script": {
+            "id": "{{HOMEYSCRIPT_ID}}",
+            "name": "Temperatuur variabel instellen"
+          },
+          "argument": "35, VACATION"
+        },
+        "x": 1850,
+        "y": 1000,
+        "outputSuccess": [
+          "b8915ddc-a37f-4c91-9eae-01293ca62a98"
+        ]
+      },
+      "b8915ddc-a37f-4c91-9eae-01293ca62a98": {
+        "type": "action",
+        "id": "homey:manager:logic:variable_set_boolean",
+        "args": {
+          "variable": {
+            "id": "{{VAR_BOILER_NACHT_VERWARMEN}}",
+            "name": "BoilerNachtVerwarmen"
+          },
+          "value": false
+        },
+        "x": 2300,
+        "y": 1000,
+        "outputSuccess": [
+          "24b6677a-e32a-418d-ae3a-e464d37ed85b"
+        ]
+      },
+      "934ce898-9dcf-49f5-a6fe-b15a3c8110ac": {
+        "type": "action",
+        "id": "homey:manager:mobile:push_text",
+        "args": {
+          "user": {
+            "id": "{{HOMEY_USER_ID}}",
+            "name": "{{HOMEY_USER_NAME}}"
+          },
+          "text": "⚠️ Boilerflow: stroomprijzen niet beschikbaar, boiler verwarmt nu zonder prijscheck."
+        },
+        "x": 1400,
+        "y": 250,
+        "outputSuccess": [
+          "47a54190-89b1-4a66-9924-6d9fc54cb3a1"
+        ]
+      },
+      "7cb3c11e-c4fa-4b28-88e9-46878b011f91": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "20:45"
+        },
+        "x": 0,
+        "y": 2200,
+        "outputSuccess": [
+          "0da6a476-cce6-49d2-a742-f5619783e1d8"
+        ]
+      },
+      "0da6a476-cce6-49d2-a742-f5619783e1d8": {
+        "type": "condition",
+        "id": "homey:manager:energy:solar_forecast_tomorrow_kwh_above",
+        "args": {
+          "value": 20
+        },
+        "x": 450,
+        "y": 2200,
+        "outputTrue": [
+          "47d25988-568d-46df-b52a-a2d3e4dc74a4"
+        ],
+        "outputFalse": [
+          "4b0ed944-b7d5-4ad6-b30f-a596f7def302"
+        ],
+        "outputError": [
+          "4b0ed944-b7d5-4ad6-b30f-a596f7def302"
+        ]
+      },
+      "47d25988-568d-46df-b52a-a2d3e4dc74a4": {
+        "type": "action",
+        "id": "homey:manager:logic:variable_set_boolean",
+        "args": {
+          "variable": {
+            "id": "{{VAR_BOILER_ZON_MORGEN}}",
+            "name": "BoilerZonMorgen"
+          },
+          "value": true
+        },
+        "x": 900,
+        "y": 2150,
+        "outputSuccess": [
+          "9a067ae3-ff6d-4a56-bac2-70669d422552"
+        ]
+      },
+      "4b0ed944-b7d5-4ad6-b30f-a596f7def302": {
+        "type": "action",
+        "id": "homey:manager:logic:variable_set_boolean",
+        "args": {
+          "variable": {
+            "id": "{{VAR_BOILER_ZON_MORGEN}}",
+            "name": "BoilerZonMorgen"
+          },
+          "value": false
+        },
+        "x": 900,
+        "y": 2300,
+        "outputSuccess": [
+          "a2b6c7c9-e778-41de-9699-4d24beaf881d"
+        ]
+      },
+      "754c71cc-5fb6-4a7f-bcbf-799ddcdfec95": {
+        "type": "trigger",
+        "id": "homey:manager:cron:time_exactly",
+        "args": {
+          "time": "17:05"
+        },
+        "x": 0,
+        "y": 2500,
+        "outputSuccess": [
+          "574089a6-559f-430e-b038-d97b83a9ed97"
+        ]
+      },
+      "574089a6-559f-430e-b038-d97b83a9ed97": {
+        "type": "condition",
+        "id": "homey:manager:logic:equal_boolean",
+        "droptoken": "homey:manager:logic|{{VAR_BOILER_ZON_MORGEN}}",
+        "x": 450,
+        "y": 2500,
+        "outputTrue": [
+          "1efb7467-a471-4619-a1d8-463b0281b2fd"
+        ]
+      },
+      "1efb7467-a471-4619-a1d8-463b0281b2fd": {
+        "type": "condition",
+        "id": "homey:manager:logic:lt",
+        "droptoken": "homey:device:{{BOILER_DEVICE_ID}}|measure_temperature",
+        "args": {
+          "comparator": 45
+        },
+        "x": 900,
+        "y": 2500,
+        "outputTrue": [
+          "e1b18185-bac3-43ca-a5c7-62074cc507df"
+        ]
+      },
+      "e1b18185-bac3-43ca-a5c7-62074cc507df": {
+        "type": "action",
+        "id": "homey:app:com.athom.homeyscript:runWithArg",
+        "args": {
+          "script": {
+            "id": "{{HOMEYSCRIPT_ID}}",
+            "name": "Temperatuur variabel instellen"
+          },
+          "argument": "55, AUTO"
+        },
+        "x": 1400,
+        "y": 2500,
+        "outputSuccess": [
+          "d4243173-92e7-4741-8417-2d174be3583e"
+        ]
+      },
+      "d4243173-92e7-4741-8417-2d174be3583e": {
+        "type": "action",
+        "id": "homey:manager:logic:variable_set_boolean",
+        "args": {
+          "variable": {
+            "id": "{{VAR_BOILER_NACHT_VERWARMEN}}",
+            "name": "BoilerNachtVerwarmen"
+          },
+          "value": true
+        },
+        "x": 1850,
+        "y": 2500,
+        "outputSuccess": [
+          "47e1050f-c909-4146-8f8e-998329a98137"
+        ]
+      },
+      "47e1050f-c909-4146-8f8e-998329a98137": {
+        "type": "action",
+        "id": "homey:manager:mobile:push_text",
+        "args": {
+          "user": {
+            "id": "{{HOMEY_USER_ID}}",
+            "name": "{{HOMEY_USER_NAME}}"
+          },
+          "text": "☁️ Minder zon dan verwacht: boiler is [[homey:device:{{BOILER_DEVICE_ID}}|measure_temperature]]°C, nu bijverwarmen op AUTO."
+        },
+        "x": 2300,
+        "y": 2500,
+        "outputSuccess": [
+          "b1e9e687-a83b-42e5-914e-f49fa34a5227"
+        ]
+      },
+      "b47113e8-a353-41f0-9f12-240ec7917fee": {
+        "type": "note",
+        "value": "NACHT (21:00–09:00): als morgen géén zonnige dag is, verwarmen in de 7 goedkoopste uren.",
+        "color": "yellow",
+        "x": 450,
+        "y": -150
+      },
+      "c1626b2b-4ddb-4e9d-bd8b-49e167fb375f": {
+        "type": "note",
+        "value": "DAG (10:00–17:00): op een zonnige dag verwarmen in de 5 uren met de meeste verwachte zon.",
+        "color": "yellow",
+        "x": 450,
+        "y": 1250
+      },
+      "c3ce1818-52f4-46da-b15d-32805087729f": {
+        "type": "note",
+        "value": "20:45: verwachte zonne-opbrengst morgen > 20 kWh? Dan wordt morgen een zonnedag (genoeg voor batterijen + boiler) en slaat de nacht over.",
+        "color": "yellow",
+        "x": 450,
+        "y": 2050
+      },
+      "975b6579-3f5e-4978-9e78-e46954cb6826": {
+        "type": "note",
+        "value": "17:05 vangnet: zonnedag maar boiler < 45°C? Dan alsnog bijverwarmen zodat je kunt douchen.",
+        "color": "yellow",
+        "x": 450,
+        "y": 2420
+      },
+      "19b6e0b9-f701-4331-8cb7-516fd81a29cd": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "🔥 Boiler AAN → 55°C (HEAT_PUMP). Zonnedag: [[homey:manager:logic|{{VAR_BOILER_ZON_MORGEN}}]] · stroomprijs nu € [[homey:device:{{PRIJS_DEVICE_ID}}|meter_price_h0]] · boiler nu [[homey:device:{{BOILER_DEVICE_ID}}|measure_temperature]]°C"
+        },
+        "x": 2750,
+        "y": 600
+      },
+      "24b6677a-e32a-418d-ae3a-e464d37ed85b": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "💤 Boiler UIT → 35°C (VACATION). Boiler nu [[homey:device:{{BOILER_DEVICE_ID}}|measure_temperature]]°C · stroomprijs nu € [[homey:device:{{PRIJS_DEVICE_ID}}|meter_price_h0]]"
+        },
+        "x": 2750,
+        "y": 1000
+      },
+      "9a067ae3-ff6d-4a56-bac2-70669d422552": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "☀️ Boilerplanning: morgen > 20 kWh zon verwacht → boiler warmt overdag op zonnestroom, nacht wordt overgeslagen."
+        },
+        "x": 1400,
+        "y": 2150
+      },
+      "a2b6c7c9-e778-41de-9699-4d24beaf881d": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "🌙 Boilerplanning: morgen weinig zon verwacht → boiler warmt vannacht in de 7 goedkoopste uren."
+        },
+        "x": 1400,
+        "y": 2300
+      },
+      "b1e9e687-a83b-42e5-914e-f49fa34a5227": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "☁️ Vangnet 17:05: minder zon dan verwacht, boiler [[homey:device:{{BOILER_DEVICE_ID}}|measure_temperature]]°C → bijverwarmen op AUTO."
+        },
+        "x": 2750,
+        "y": 2500
+      },
+      "47a54190-89b1-4a66-9924-6d9fc54cb3a1": {
+        "type": "action",
+        "id": "homey:manager:notifications:create_notification",
+        "args": {
+          "text": "⚠️ Boilerflow: stroomprijzen niet beschikbaar, boiler verwarmt zonder prijscheck."
+        },
+        "x": 1850,
+        "y": 250
+      }
+    }
+  }
+}
